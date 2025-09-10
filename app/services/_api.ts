@@ -4,7 +4,7 @@ export default function useApiClient() {
   const config = useRuntimeConfig()
 
   const apiClient = axios.create({
-    baseURL: config.public.apiBase,
+    baseURL: import.meta.env.NUXT_PUBLIC_API_BASE,
     headers: {
       'Content-Type': 'application/json'
     }

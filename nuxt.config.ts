@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiSecret: import.meta.env.NUXT_API_SECRET_KEY,
     public: {
-      apiBase: import.meta.env.NUXT_PUBLIC_API_BASE || 'http://localhost:3000/mockup',
+      apiBase: import.meta.env.NUXT_PUBLIC_API_BASE || 'http://localhost:3000',
     }
   },
 

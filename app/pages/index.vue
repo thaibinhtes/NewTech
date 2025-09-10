@@ -26,30 +26,8 @@ import srcBanner2 from '~/assets/images/banners/2.png'
 import srcBanner3 from '~/assets/images/banners/3.png'
 import srcBanner4 from '~/assets/images/banners/4.png'
 
-const images = ref<PRODUCT_IMAGE[]>([
-  {
-    url: srcBanner
-  },
-  {
-    url: srcBanner2
-  },
-  {
-    url: srcBanner3
-  },
-  {
-    url: srcBanner4
-  }
-])
-const product = ref<PRODUCT>({
-  uid: '1',
-  name: 'Arc Single Tier Wall Hung Vanity',
-  description: 'Discover modern contemporary lines with the Arc Single Tier Vanity. The cabinetry is designed and assembled in NZ and features sleek negative finger pull detailing with soft-close drawers and doors. Create your vision today with the multitude of slab tops, basins, cabinetry colours, and extrusion colour combinations on offer.',
-  slug: 'product',
-  options: [],
-  quantity: 1
-})
 
-const options = ref<PRODUCT_OPTION_TYPE[]>([
+const DATA_OPTIOSN =  [
     {
       "optionTypeId": 1,
       "displayName": "Size",
@@ -218,17 +196,47 @@ const options = ref<PRODUCT_OPTION_TYPE[]>([
         }
       ]
     }
-  ])
+  ]
+
+const images = ref<PRODUCT_IMAGE[]>([
+  {
+    url: srcBanner
+  },
+  {
+    url: srcBanner2
+  },
+  {
+    url: srcBanner3
+  },
+  {
+    url: srcBanner4
+  }
+])
+const product = ref<Partial<PRODUCT> & { quantity: number }>({
+    "uid": "99873be9-5e0e-418e-acf7-b6f89acbc5b7",
+    "name": "Arc Single Tier Wall Hung Vanity",
+    "slug": "arc-single-tier-wall-hung-vanity",
+    "description": "Discover modern contemporary lines with the Arc Single Tier Vanity. The cabinetry is designed and assembled in NZ and features sleek negative finger pull detailing with soft-close drawers and doors. Create your vision today with the multitude of slab tops, basins, cabinetry colours, and extrusion colour combinations on offer.",
+    quantity: 1
+  })
+
+const options = ref(DATA_OPTIOSN)
+
 
 
 const galleryActie = ref<number>(0)
+
 </script>
 
 <style lang="scss">
   .page {
+    &__container {
+      justify-content: center;
+    }
     &__product {
       padding: 120px 0;
       gap: 102px;
+      justify-content: center;
     }
 
     &__product-content {
