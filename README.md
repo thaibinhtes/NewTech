@@ -1,7 +1,7 @@
-# Nuxt Minimal Starter
+# Demo New Tech
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
+Look figma at the [Link Figma](https://www.figma.com/design/FjhBXuO6b3Ti4Odc4GBI2k/Newtech-UI-Test?node-id=1-1660&t=m7uwth6gwiSCOZmr-0)
 ## Setup
 
 Make sure to install dependencies:
