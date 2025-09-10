@@ -1,0 +1,22 @@
+@use './icomoon/style.css';
+
+$font-roboto-regular: 'Roboto';
+
+
+@font-face {
+  font-family: $font-roboto-regular;
+  src: url('./Roboto/Roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*,
+html,
+body {
+  font-family: $font-roboto-regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
