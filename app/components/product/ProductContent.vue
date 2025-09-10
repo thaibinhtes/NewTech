@@ -10,7 +10,7 @@
 
       <div class="product-content__options">
         <div class="product-content__option-title flex items-center">
-          <span class="uppercase">
+          <span class="uppercase product-content__option-txt-title">
             Choose options
           </span>
           <span class="product-content__border"></span>
@@ -282,6 +282,10 @@ watch(dataSelected, (newSelected) => {
       gap: 12px;
       font-size: 14px;
       line-height: 24px;
+    }
+
+    &__option-txt-title {
+      min-width: 150px;
     }
   }
 </style>

@@ -24,3 +24,4 @@ logs
 !.env.example
 *.zip
 yarn.lock
+package-lock.json
